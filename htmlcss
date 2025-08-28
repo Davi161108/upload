@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BARBEARIA FELIPPE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #4E342E;
+            color: #F5F5DC;
+            background-image: url('https://media.istockphoto.com/id/1320646994/pt/foto/vintage-barber-shop-tools-on-wood-background-with-place-for-text-3d-rendering.jpg?b=1&s=170667a&w=0&k=20&c=_1zfZVazFnAcAK3EMHZ8DmZhDwS9VAdsCYubowdXXso='); /* Caminho da imagem */
+            background-size: cover; /* Faz a imagem cobrir toda a tela */
+            background-position: center; /* Centraliza a imagem */
+            background-repeat: no-repeat; /* Evita repetição da imagem */
+            height: 100vh; /* Garante que o fundo ocupe toda a altura da tela */
+            margin: 0;
+        }
+
+        header {
+            background-color: #4e342e;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            color: #fff;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            background-color: #4E342E;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        .banner {
+            background: url('"C:\Users\TEMP.ADM.008\Pictures\banner2.png"') center/cover no-repeat;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 1px 1px 5px black;
+        }
+
+        .banner h2 {
+            font-size: 48px;
+            color: #fff;
+            margin-top: 20%;
+        }
+
+        .banner h4{
+            text-align: center;
+            margin-top: 60%;
+        }
+
+        .servicos {
+            padding: 120px;
+            text-align: center;
+        }
+
+        .servicos h2 {
+        margin-bottom: 30px;
+        margin-top: 25%;
+        }
+
+        .servicos .servico {
+            display: inline-block;
+            width: 250px;
+            margin: 0 15px;
+            vertical-align: top;
+        }
+
+        .servico img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+        margin-top: 10px; /* Reduzido */
+        height: 300px; /* Tamanho fixo */
+        object-fit: cover; /* Recorta e preenche */
+        }
+
+        .servico h3 {
+            margin: 10px 0 5px;
+            font-size: 20px;
+            color: #fff;
+        }
+
+        .servico p {
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        footer {
+            background-color: #111;
+            color: #ccc;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            margin-top: 0%;
+        }
+
+        #minha{
+            position:sticky;
+            top: 0;
+        }
+
+        footer{
+            background-color: #000000;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        .grid-servicos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 20px;
+        max-width: 1000px;
+        margin: 0 auto;
+        border-radius: 20px;
+        margin-right: 10px;
+        justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="minha">
+    <nav>
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="file:///C:/Users/Davi/cad.html">Cadastro</a></li>
+        </ul>
+    </nav>
+    </div>
+
+    <div class="banner">
+    <h2>Bem Vindo à Barber Shop!</h2>
+    <h4>Veja Mais...</h4>
+    </div>
+
+    <!-- SEÇÃO DE SERVIÇOS -->
+    <section class="servicos">
+    <h2>Aqui estão os nossos Serviços disponíveis!</h2>
+    
+    <div class="grid-servicos"> <!-- Container de Grid começa aqui -->
+        
+        <div id="corte" class="servico">
+            <a href="cad.html">
+                <img src="https://images.pexels.com/photos/618786/pexels-photo-618786.jpeg" alt="Corte de cabelo">
+                <h3>Corte de Cabelo</h3>
+                <p>Clássico, moderno ou personalizado.</p>
+            </a>
+        </div>
+
+        <div id="barba" class="servico">
+            <a href="cad.html">
+                <img src="https://images.pexels.com/photos/3992879/pexels-photo-3992879.jpeg" alt="Barba">
+                <h3>Barba</h3>
+                <p>Navalha, modelagem e hidratação.</p>
+            </a>
+        </div>
+
+        <div id="sobrancelha" class="servico">
+            <a href="cad.html">
+                <img src="https://images.pexels.com/photos/1813272/pexels-photo-1813272.jpeg" alt="Sobrancelha">
+                <h3>Sobrancelha</h3>
+                <p>Design na navalha com precisão.</p>
+            </a>
+        </div>
+
+        <div id="agenda" class="servico">
+            <a href="cad.html">
+                <img src="https://blog.kukos.com.br/wp-content/uploads/2017/03/historia-do-relogio-cuco-no-brasil.webp" alt="Agenda">
+                <h3>Agenda</h3>
+                <p>Consulte os horários disponíveis e agende o melhor horário para você!</p>
+            </a>
+        </div>
+
+    </div> <!-- Container de Grid termina aqui -->
+</section>
+
+    <footer>
+        &copy; 2025 Barbearia FELIPPE. Todos os direitos reservados!
+    </footer>
+
+</body>
+</html>
