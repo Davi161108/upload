@@ -122,8 +122,11 @@
         }
 
         #minha{
-            position:sticky;
-            top: 0;
+        position: fixed;   /* Fica fixo na tela */
+        top: 0;            /* grudado no topo */
+        left: 0;           /* alinhado à esquerda */
+        width: 100%;       /* ocupa toda a largura */
+        z-index: 1000;     /* fica por cima do conteúdo */
         }
 
         footer{
@@ -145,23 +148,34 @@
         margin-right: 10px;
         justify-content: center;
         }
+
+
+        #sobr{
+    background-color:#000;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-weight: normal;
+}
+
+#apresentacao{
+    text-align: center;
+}
     </style>
 </head>
 <body>
     <div id="minha">
     <nav>
         <ul>
-            <li><a href="https://upload-omega-azure.vercel.app/#">Início</a></li>
-            <li><a href="#">Serviços</a></li>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#corte">Serviços</a></li>
             <li><a href="#">Sobre</a></li>
-            <li><a href="https://upload-blush-one.vercel.app/#">Cadastro</a></li>
+            <li><a href="#cad">Cadastro</a></li>
         </ul>
     </nav>
     </div>
 
-    <div class="banner">
+    <div id="inicio" class="banner">
     <h2>Bem Vindo à Barber Shop!</h2>
-    <h4>Veja Mais...</h4>
     </div>
 
     <!-- SEÇÃO DE SERVIÇOS -->
@@ -171,7 +185,7 @@
     <div class="grid-servicos"> <!-- Container de Grid começa aqui -->
         
         <div id="corte" class="servico">
-            <a href="cad.html">
+            <a href="#cad">
                 <img src="https://images.pexels.com/photos/618786/pexels-photo-618786.jpeg" alt="Corte de cabelo">
                 <h3>Corte de Cabelo</h3>
                 <p>Clássico, moderno ou personalizado.</p>
@@ -179,7 +193,7 @@
         </div>
 
         <div id="barba" class="servico">
-            <a href="cad.html">
+            <a href="#cad">
                 <img src="https://images.pexels.com/photos/3992879/pexels-photo-3992879.jpeg" alt="Barba">
                 <h3>Barba</h3>
                 <p>Navalha, modelagem e hidratação.</p>
@@ -187,7 +201,7 @@
         </div>
 
         <div id="sobrancelha" class="servico">
-            <a href="cad.html">
+            <a href="#cad">
                 <img src="https://images.pexels.com/photos/1813272/pexels-photo-1813272.jpeg" alt="Sobrancelha">
                 <h3>Sobrancelha</h3>
                 <p>Design na navalha com precisão.</p>
@@ -195,7 +209,7 @@
         </div>
 
         <div id="agenda" class="servico">
-            <a href="cad.html">
+            <a href="#cad">
                 <img src="https://blog.kukos.com.br/wp-content/uploads/2017/03/historia-do-relogio-cuco-no-brasil.webp" alt="Agenda">
                 <h3>Agenda</h3>
                 <p>Consulte os horários disponíveis e agende o melhor horário para você!</p>
@@ -205,11 +219,61 @@
     </div> <!-- Container de Grid termina aqui -->
 </section>
 
+    <header>
+        <h2>PREENCHA A FICHA DE CADASTRO PARA NOVOS USUÁRIOS!</h2>
+    </header>
+    <form id="cad" action="destino.php" method="post">
+        <div id="cad" class="grid-containers">
+
+        <!--CAMPOS OBRIGATÓRIOS-->
+
+        <label for="nome"></label><br>
+        <input placeholder="Nome Completo:" type="text" id="nome" required><br>
+
+        <label for="email"></label><br>
+        <input placeholder="E-mail" type="text" id="email" required><br>
+
+        <label for="telefone"></label><br>
+        <input placeholder="Telefone" type="text" id="telefone" required><br>
+
+        <label for="usuario"></label><br>
+        <input placeholder="Nome de Usuário" type="text" id="usuario" required><br>
+
+        <label for="data"></label><br>
+        <input placeholder="Data de Nascimento" type="date" id="data" required><br>
+
+        <label for="senha"></label><br>
+        <input placeholder="Insira Sua Senha" type="password" id="senha" required><br>
+
+        <label for="senh"></label><br>
+        <input placeholder="Confirme Sua Senha" type="password" id="senh" required><br><br>
+
+        <label for="out">Selecione o seu Gênero:</label><br>
+            <select id="out" name="out">
+                <option value="MG">Masculino</option>
+                <option value="RJ">Feminino</option>
+                <option value="SP">Outro</option>
+            </select><br><br>
+        </div>
+
+        <!-- Botão -->
+        <input type="reset" value="RESETAR">
+        <input type="submit" value="CADASTRAR">
+    </form>
+
+    <header>
+        <h2>SOBRE MIM...</h2>
+    </header>
+        <div id="sobr" class="sobre">
+            <h4>Olá, meu nome é André, tenho 33 anos e sou o fundador e único responsável pela Barbearia. Desde os meus 18 anos de idade, dedico minha vida a essa profissão que tanto amo. São mais de 15 anos de experiência, sempre prezando pela qualidade, atenção aos detalhes e respeito aos clientes.
+            A barbearia é mais do que um local de cortes de cabelo e barba — é um espaço de confiança, onde cada cliente é tratado com dedicação e amizade. Trabalho sozinho, e isso garante que cada atendimento seja personalizado, com o cuidado que cada cliente merece.
+            Minha maior satisfação é conquistar a fidelidade de quem entra pela porta da barbearia e volta, não apenas pelo serviço, mas pela confiança construída ao longo do tempo. Aqui, cada corte e cada barba são feitos com paixão, paciência e compromisso com a excelência.
+            Se você procura um ambiente acolhedor, tradicional e feito sob medida para você, será um prazer recebê-lo na minha barbearia.</h4>
+        </div>
+
     <footer>
         &copy; 2025 Barbearia FELIPPE. Todos os direitos reservados!
     </footer>
 
 </body>
 </html>
-
-
