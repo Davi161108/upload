@@ -60,3 +60,12 @@ body {
         width: 100%;       /* ocupa toda a largura */
         z-index: 1000;     /* fica por cima do conteúdo */
         }
+
+      footer {
+            background-color: #111;
+            color: #ccc;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            margin-top: 0%;
+      }
