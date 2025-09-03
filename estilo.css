@@ -1,0 +1,147 @@
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #4E342E;
+            color: #F5F5DC;
+            background-image: url('https://media.istockphoto.com/id/1320646994/pt/foto/vintage-barber-shop-tools-on-wood-background-with-place-for-text-3d-rendering.jpg?b=1&s=170667a&w=0&k=20&c=_1zfZVazFnAcAK3EMHZ8DmZhDwS9VAdsCYubowdXXso='); /* Caminho da imagem */
+            background-size: cover; /* Faz a imagem cobrir toda a tela */
+            background-position: center; /* Centraliza a imagem */
+            background-repeat: no-repeat; /* Evita repetição da imagem */
+            height: 100vh; /* Garante que o fundo ocupe toda a altura da tela */
+            margin: 0;
+        }
+
+        header {
+            background-color: #4e342e;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            color: #fff;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            background-color: #4E342E;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        .banner {
+            background: url('"C:\Users\TEMP.ADM.008\Pictures\banner2.png"') center/cover no-repeat;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 1px 1px 5px black;
+        }
+
+        .banner h2 {
+            font-size: 48px;
+            color: #fff;
+            margin-top: 25%;
+            text-align: center;
+        }
+
+        .banner h4{
+            text-align: center;
+            margin-top: 60%;
+        }
+
+        .servicos {
+            padding: 120px;
+            text-align: center;
+        }
+
+        .servicos h2 {
+        margin-bottom: 30px;
+        margin-top: 290px;
+        }
+
+        .servicos .servico {
+            display: inline-block;
+            width: 250px;
+            margin: 0 15px;
+            vertical-align: top;
+        }
+
+        .servico img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+        margin-top: 10px; /* Reduzido */
+        height: 300px; /* Tamanho fixo */
+        object-fit: cover; /* Recorta e preenche */
+        }
+
+        .servico h3 {
+            margin: 10px 0 5px;
+            font-size: 20px;
+            color: #fff;
+        }
+
+        .servico p {
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        footer {
+            background-color: #111;
+            color: #ccc;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            margin-top: 0%;
+        }
+
+        #top{
+        position: fixed;   /* Fica fixo na tela */
+        top: 0;            /* grudado no topo */
+        left: 0;           /* alinhado à esquerda */
+        width: 100%;       /* ocupa toda a largura */
+        z-index: 1000;     /* fica por cima do conteúdo */
+        }
+
+        footer {
+            background-color: #111;
+            color: #ccc;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        .grid-servicos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        max-width: 1000px;
+        margin: 0 auto;
+        border-radius: 20px;
+        justify-content: center;
+        justify-items: center;
+        }
