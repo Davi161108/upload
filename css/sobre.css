@@ -1,0 +1,91 @@
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #4E342E;
+            color: #F5F5DC;
+        }
+
+        header {
+            background-color: #4E342E;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        .sobre {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .sobre img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .sobre h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .sobre p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .contato {
+            margin-top: 30px;
+        }
+
+        .contato a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #F5F5DC;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contato a:hover {
+            color: #FFD700;
+        }
+
+        footer {
+            background-color: #111;
+            color: #ccc;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            background-color: #4E342E;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
